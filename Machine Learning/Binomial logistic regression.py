@@ -3,7 +3,6 @@ from sklearn.datasets import load_breast_cancer
 
 '''Imports the 'LogisticRegression' class from the 'sklearn.linear_model' module. This class is used to create a logistic regression model.'''
 from sklearn.linear_model import LogisticRegression
-
 '''Imports the 'train_test_split' function from the 'sklearn.model_selection' module. This function is used to split the dataset into training and testing sets.'''
 from sklearn.model_selection import train_test_split
 
