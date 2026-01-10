@@ -1,5 +1,5 @@
 '''Import the train_test_split function from the sklearn.model_selection module.
- This function is used to split the dataset into training and testing sets.'''
+ This function is used to split the dataset into training and te sting sets.'''
 from sklearn.model_selection import train_test_split
 '''Import the datasets, linear_model, and metrics modules from the sklearn library.
 datasets: Used to load sample datasets.
@@ -35,6 +35,6 @@ y_pred = reg.predict(X_test)
 
 '''Calculate and print the accuracy of the model.
 metrics.accuracy_score(y_test, y_pred): Compares the predicted values (y_pred) with the actual values (y_test) to determine the proportion of correct predictions.
-* 100: Converts the accuracy score to a percentage.
+* 100: Converts the accuracy score to a percentage.....
 :.2f: Formats the percentage to two decimal places.'''
 print(f"Logistic Regression Model Accuracy: {metrics.accuracy_score(y_test, y_pred) * 100:.2f}%")
