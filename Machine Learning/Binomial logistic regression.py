@@ -1,3 +1,4 @@
+# %%
 '''Imports the 'load_breast_cancer' function from the 'sklearn.datasets' module. This function is used to load the breast cancer dataset, which is included with scikit-learn.'''
 from sklearn.datasets import load_breast_cancer
 
@@ -38,3 +39,5 @@ acc = accuracy_score(y_test, clf.predict(X_test)) * 100
 - The 'f' before the string indicates a formatted string.
 - '{acc:.2f}' is a placeholder that will be replaced by the value of the 'acc' variable, formatted to two decimal places.'''
 print(f"Logistic Regression model accuracy: {acc:.2f}%")
+
+# %%
