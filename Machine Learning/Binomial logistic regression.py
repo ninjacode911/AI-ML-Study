@@ -4,10 +4,12 @@ from sklearn.datasets import load_breast_cancer
 
 '''Imports the 'LogisticRegression' class from the 'sklearn.linear_model' module. This class is used to create a logistic regression model.'''
 from sklearn.linear_model import LogisticRegression
-'''Imports the 'train_test_split' function from the 'sklearn.model_selection' module. This function is used to split the dataset into training and testing sets.'''
+'''Imports the 'train_test_split' function from the 'sklearn.model_selection' module. 
+This function is used to split the dataset into training and testing sets.'''
 from sklearn.model_selection import train_test_split
 
-'''Imports the 'accuracy_score' function from the 'sklearn.metrics' module. This function is used to calculate the accuracy of the model's predictions.'''
+'''Imports the 'accuracy_score' function from the 'sklearn.metrics' module.
+ This function is used to calculate the accuracy of the model's predictions.'''
 from sklearn.metrics import accuracy_score
 
 '''Loads the breast cancer dataset. 'return_X_y=True' ensures that the data is returned as two separate variables:
@@ -22,7 +24,8 @@ X, y = load_breast_cancer(return_X_y=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=23)
 
 '''Creates an instance of the LogisticRegression model.
-- 'max_iter=10000' sets the maximum number of iterations for the solver to converge. This can be increased if the model fails to converge.
+- 'max_iter=10000' sets the maximum number of iterations for the solver to converge.
+ This can be increased if the model fails to converge.
 - 'random_state=0' is used to ensure that the model's internal random processes are the same every time. This helps in getting reproducible results from the model itself.'''
 clf = LogisticRegression(max_iter=10000, random_state=0)
 
@@ -37,7 +40,8 @@ acc = accuracy_score(y_test, clf.predict(X_test)) * 100
 
 '''Prints the accuracy of the model to the console.
 - The 'f' before the string indicates a formatted string.
-- '{acc:.2f}' is a placeholder that will be replaced by the value of the 'acc' variable, formatted to two decimal places.'''
+- '{acc:.2f}' is a placeholder that will be replaced by the value of the 'acc' variable,
+ formatted to two decimal places.'''
 print(f"Logistic Regression model accuracy: {acc:.2f}%")
 
 # %%
